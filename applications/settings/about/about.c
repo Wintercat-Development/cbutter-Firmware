@@ -41,6 +41,48 @@ static DialogMessageButton about_screen_product(DialogsApp* dialogs, DialogMessa
     return result;
 }
 
+static DialogMessageButton about_screen_wd(DialogsApp* dialogs, DialogMessage* message) {
+    DialogMessageButton result;
+
+    const char* screen_text = "Wintercat Development \n"
+                              "Southwest Minnesota \n"
+                              "United States of America \n"
+                              "(C) 2026";
+
+    dialog_message_set_text(message, screen_text, 0, 0, AlignLeft, AlignTop);
+    result = dialog_message_show(dialogs, message);
+
+    return result;
+}
+
+static DialogMessageButton about_screen_fwv(DialogsApp* dialogs, DialogMessage* message) {
+    DialogMessageButton result;
+
+    const char* screen_text = "cbutter Firmware\n"
+                              "V0.0.1\n"
+                              "\n"
+                              "Not for illegal use!!\n";
+
+    dialog_message_set_text(message, screen_text, 0, 0, AlignLeft, AlignTop);
+    result = dialog_message_show(dialogs, message);
+
+    return result;
+}
+
+static DialogMessageButton about_screen_updinfo(DialogsApp* dialogs, DialogMessage* message) {
+    DialogMessageButton result;
+
+    const char* screen_text = "For updates/fixes, please visit\n"
+                              "https://github.com/Wintercat-Development/cbutter-Firmware\n"
+                              "or \n"
+                              "Not for illegal use!!\n";
+
+    dialog_message_set_text(message, screen_text, 0, 0, AlignLeft, AlignTop);
+    result = dialog_message_show(dialogs, message);
+
+    return result;
+}
+
 static DialogMessageButton about_screen_address(DialogsApp* dialogs, DialogMessage* message) {
     DialogMessageButton result;
 
@@ -197,16 +239,19 @@ static DialogMessageButton about_screen_fw_version(DialogsApp* dialogs, DialogMe
 }
 
 const AboutDialogScreen about_screens[] = {
+    about_screen_wd,
+    about_screen_fwv,
     about_screen_product,
-    about_screen_compliance,
-    about_screen_address,
-    about_screen_icon1,
-    about_screen_icon2,
-    about_screen_cert_china_0,
-    about_screen_cert_china_1,
-    about_screen_cert_taiwan,
-    about_screen_cert_mexico,
-    about_screen_hw_version,
+    about_screen_updinfo,
+    // about_screen_compliance,
+    // about_screen_address,
+    // about_screen_icon1,
+    // about_screen_icon2,
+    // about_screen_cert_china_0,
+    // about_screen_cert_china_1,
+    // about_screen_cert_taiwan,
+    // about_screen_cert_mexico,
+    // about_screen_hw_version,
     about_screen_fw_version,
 };
 

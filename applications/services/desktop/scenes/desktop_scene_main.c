@@ -62,9 +62,10 @@ static void
 
 static void desktop_scene_main_open_app_or_profile(Desktop* desktop, FavoriteApp* application) {
     if(strlen(application->name_or_path) > 0) {
-        loader_start_detached_with_gui_error(desktop->loader, application->name_or_path, NULL);
-    } else {
-        loader_start_detached_with_gui_error(desktop->loader, "Passport", NULL);
+        loader_start_detached_with_gui_error(
+            desktop->loader,
+            application->name_or_path,
+            NULL);
     }
 }
 
