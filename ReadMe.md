@@ -8,7 +8,7 @@
 
 ## What is this?
 
-This is a custom firmware build for Flipper zero that adds preset apps, different pictures, and new.
+This is a custom firmware build for Flipper zero that adds preset apps, and different pictures.
 
 ## How can i add an app to the official release?
 
