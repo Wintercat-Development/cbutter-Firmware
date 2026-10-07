@@ -31,3 +31,6 @@ This is a new firmware. Give me some time, i have a life too.
 ## Will david hurt me?
 
 No(t yet).
+
+
+It not verity harper, its david.
