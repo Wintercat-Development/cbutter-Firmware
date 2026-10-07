@@ -24,4 +24,10 @@ His name is David. He wont hurt you
 -Everything from Flipper's official firmware
 -Enhanced SubGHz Chat
 
-More coming soon!
+## Why is there barely any apps installed?
+
+This is a new firmware. Give me some time, i have a life too.
+
+## Will david hurt me?
+
+No(t yet).
